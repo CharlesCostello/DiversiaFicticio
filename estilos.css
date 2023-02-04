@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+h2{
+    text-align: center;
+}
+
+.GridContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+.Titulo{
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .GridContainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+}
